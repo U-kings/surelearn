@@ -1,19 +1,18 @@
-import Image from "next/image";
+import Image from "next/image"
 
-
-import { ArrowRight } from "lucide-react";
-import { DashboardMockup } from "./dashboard-mockup";
-import { FadeLeft, FadeRight } from "./animations";
-import { Button } from "@workspace/ui/components/button";
+import { ArrowRight } from "lucide-react"
+import { DashboardMockup } from "./dashboard-mockup"
+import { FadeLeft, FadeRight } from "./animations"
+import { Button } from "@workspace/ui/components/button"
 
 export default function Hero() {
   return (
     <section className="overflow-hidden">
       <div className="container mx-auto py-20 lg:py-28">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <FadeLeft delay={0.3}>
-            <div className="space-y-8 wow animate__animated animate__fadeInLeft">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+        <div className="grid items-center gap-16 lg:grid-cols-2">
+          <FadeLeft delay={0.3} className="mx-auto">
+            <div className="wow animate__animated animate__fadeInLeft space-y-8">
+              <h1 className="text-5xl leading-tight font-bold md:text-6xl lg:text-7xl">
                 Empower your
                 <br />
                 institution with
@@ -21,13 +20,13 @@ export default function Hero() {
                 <span className="text-teal-600">modern learning</span>
               </h1>
 
-              <p className="text-muted-foreground text-lg leading-8 max-w-xl">
+              <p className="max-w-xl text-lg leading-8 text-muted-foreground">
                 The enterprise-grade LMS designed for clarity, scale and deep
                 engagement. Streamline administration while delivering
                 world-class educational experiences.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col gap-4 sm:flex-row">
                 <Button size="lg" className="gap-2">
                   Start Building Today
                   <ArrowRight size={18} />
@@ -72,7 +71,7 @@ export default function Hero() {
             </div>
           </FadeLeft>
 
-          <FadeRight delay={0.3}>
+          <FadeRight delay={0.3} className="mx-auto">
             <div className="wow animate__animated animate__fadeInRight">
               <DashboardMockup />
               {/* <Image
@@ -88,5 +87,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }

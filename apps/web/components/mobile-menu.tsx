@@ -1,43 +1,54 @@
 "use client";
 
+import { useState } from "react";
+import Link from "next/link";
+import { Menu } from "lucide-react";
+
+import { Button } from "@workspace/ui/components/button";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
 } from "@workspace/ui/components/sheet";
-import { Button } from "@workspace/ui/components/button";
 
-
-import {
-  Menu,
-} from "lucide-react";
+const links = [
+  { name: "Products", href: "#" },
+  { name: "Solutions", href: "#" },
+  { name: "Pricing", href: "#" },
+  { name: "About", href: "#" },
+];
 
 export default function MobileMenu() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Sheet>
-      <SheetTrigger
-        type="button"
-        className="inline-flex h-10 w-10 items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-      >
-        <Menu />
+    <Sheet open={open} onOpenChange={setOpen}>
+      <SheetTrigger>
+        <Button variant="ghost" size="icon" aria-label="Open menu">
+          <Menu className="h-5 w-5" />
+        </Button>
       </SheetTrigger>
 
-      <SheetContent side="right">
-        <div className="space-y-8 mt-10">
+      <SheetContent side="right" className="w-[320px] px-5">
+        <nav className="mt-10 flex flex-col gap-6">
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="text-lg font-medium transition-colors hover:text-primary"
+            >
+              {link.name}
+            </Link>
+          ))}
 
-          <a href="#">Products</a>
-
-          <a href="#">Solutions</a>
-
-          <a href="#">Pricing</a>
-
-          <a href="#">About</a>
-
-          <Button className="w-full">
+          <Button
+            className="mt-4 w-full"
+            onClick={() => setOpen(false)}
+          >
             Get Started
           </Button>
-
-        </div>
+        </nav>
       </SheetContent>
     </Sheet>
   );
