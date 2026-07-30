@@ -127,3 +127,15 @@
     @apply bg-background text-foreground;
     }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+.container {
+  @apply max-w-7xl px-6 mx-auto;
+}
