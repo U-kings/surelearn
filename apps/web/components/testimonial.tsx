@@ -17,7 +17,7 @@ export default function Testimonial() {
             {Array.from({ length: 5 }).map((_, index) => (
               <Star
                 key={index}
-                className="h-8 w-8 fill-teal-400 text-teal-400"
+                className="h-8 w-8 fill-cyan-400 text-cyan-400"
               />
             ))}
           </div>
@@ -41,7 +41,7 @@ export default function Testimonial() {
             className="wow animate__animated animate__zoomIn mt-10"
             data-wow-delay=".4s"
           >
-            <div className="rounded-full border-2 border-teal-400 p-1">
+            <div className="rounded-full border-2 border-cyan-400 p-1">
               <Image
                 src="/testimonial-avatar.png"
                 alt="Dr. Aris Thorne"
@@ -65,7 +65,7 @@ export default function Testimonial() {
           {/* Position */}
           <FadeUp delay={0.3}>
             <p
-              className="wow animate__animated animate__fadeInUp mt-2 text-sm font-medium uppercase tracking-[0.28em] text-teal-400 md:text-lg"
+              className="wow animate__animated animate__fadeInUp mt-2 text-sm font-medium uppercase tracking-[0.28em] text-cyan-400 md:text-lg"
               data-wow-delay=".6s"
             >
               Dean of Innovation, Global University

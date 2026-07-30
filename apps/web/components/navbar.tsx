@@ -20,13 +20,15 @@ export default function Navbar() {
               alt="Surelearn Logo"
               width={170}
               height={24}
+              loading="eager"
               className="block dark:hidden w-5/6 lg:w-auto h-auto"
-            />
+              />
             <Image
               src="/surelearn-logo-light.png"
               alt="Surelearn Logo"
               width={170}
               height={24}
+              loading="eager"
               className="hidden dark:block w-5/6 lg:w-auto h-auto"
             />
           </div>

@@ -17,7 +17,8 @@ export default function Hero() {
                 <br />
                 institution with
                 <br />
-                <span className="text-teal-600">modern learning</span>
+                <span className="text-cyan-400">modern learning</span>
+                {/* <span className="text-teal-600">modern learning</span> */}
               </h1>
 
               <p className="max-w-xl text-lg leading-8 text-muted-foreground">

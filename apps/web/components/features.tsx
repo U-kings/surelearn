@@ -41,7 +41,7 @@ export default function Features() {
             <div>
               <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
                 <div>
-                  <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-teal-50 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400">
+                  <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400">
                     <BarChart3 className="h-7 w-7" />
                   </div>
 
@@ -61,7 +61,7 @@ export default function Features() {
                         key={item}
                         className="flex items-center gap-3 text-lg"
                       >
-                        <CheckCircle2 className="h-5 w-5 text-teal-600" />
+                        <CheckCircle2 className="h-5 w-5 text-cyan-600" />
                         {item}
                       </div>
                     ))}
@@ -86,7 +86,7 @@ export default function Features() {
             className="wow animate__animated animate__fadeInRight rounded-2xl border bg-background p-8"
           >
             <div>
-              <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-teal-50 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400">
+              <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400">
                 <ShieldCheck className="h-7 w-7" />
               </div>
 
@@ -105,7 +105,7 @@ export default function Features() {
             className="wow animate__animated animate__fadeInUp rounded-2xl border bg-background p-8"
           >
             <div>
-              <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-teal-50 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400">
+              <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400">
                 <Video className="h-7 w-7" />
               </div>
 
@@ -126,7 +126,7 @@ export default function Features() {
               {/* Card 4 */}
               {/* <FadeUp delay={0.3}> */}
               <div>
-                <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-teal-50 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400">
+                <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400">
                   <FolderCog className="h-7 w-7" />
                 </div>
 
@@ -150,7 +150,7 @@ export default function Features() {
                   ☷ Module 1: Introduction to Bio-Chemistry
                 </div>
 
-                <div className="rounded-md border-2 border-teal-300 bg-teal-50 p-4 dark:bg-teal-900/20">
+                <div className="rounded-md border-2 border-cyan-300 bg-cyan-50 p-4 dark:bg-cyan-900/20">
                   📝 Quiz: Atomic Structure
                 </div>
 

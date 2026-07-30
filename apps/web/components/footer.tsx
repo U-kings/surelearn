@@ -39,7 +39,7 @@ export default function Footer() {
                 height={24}
                 className="hidden h-auto w-5/6 lg:w-auto dark:block"
               />
-              {/* <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-teal-700 text-white">
+              {/* <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-cyan-700 text-white">
                 <GraduationCap className="h-5 w-5" />
               </div>
 
@@ -57,14 +57,14 @@ export default function Footer() {
             <div className="mt-8 flex items-center gap-4">
               <Link
                 href="#"
-                className="flex h-12 w-12 items-center justify-center rounded-full border transition hover:border-teal-600 hover:bg-teal-600 hover:text-white"
+                className="flex h-12 w-12 items-center justify-center rounded-full border transition hover:border-cyan-600 hover:bg-cyan-600 hover:text-white"
               >
                 <FaXTwitter className="h-5 w-5" />
               </Link>
 
               <Link
                 href="#"
-                className="flex h-12 w-12 items-center justify-center rounded-full border transition hover:border-teal-600 hover:bg-teal-600 hover:text-white"
+                className="flex h-12 w-12 items-center justify-center rounded-full border transition hover:border-cyan-600 hover:bg-cyan-600 hover:text-white"
               >
                 <FaLinkedinIn className="h-5 w-5" />
               </Link>
@@ -83,8 +83,8 @@ export default function Footer() {
                       <li key={link}>
                         <Link
                           href="#"
-                          // className="transition-all duration-300 hover:scale-110 hover:border-teal-600 hover:bg-teal-600 hover:text-white"
-                          className="text-lg text-muted-foreground transition-colors hover:text-teal-600"
+                          // className="transition-all duration-300 hover:scale-110 hover:border-cyan-600 hover:bg-cyan-600 hover:text-white"
+                          className="text-lg text-muted-foreground transition-colors hover:text-cyan-600"
                         >
                           {link}
                         </Link>
@@ -109,21 +109,21 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-8">
             <Link
               href="#"
-              className="text-base text-muted-foreground transition hover:text-teal-600"
+              className="text-base text-muted-foreground transition hover:text-cyan-600"
             >
               Privacy Policy
             </Link>
 
             <Link
               href="#"
-              className="text-base text-muted-foreground transition hover:text-teal-600"
+              className="text-base text-muted-foreground transition hover:text-cyan-600"
             >
               Terms of Service
             </Link>
 
             <Link
               href="#"
-              className="text-base text-muted-foreground transition hover:text-teal-600"
+              className="text-base text-muted-foreground transition hover:text-cyan-600"
             >
               Cookie Settings
             </Link>

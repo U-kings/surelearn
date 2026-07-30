@@ -8,12 +8,12 @@ export default function CTA() {
   return (
     <section className="py-20 lg:py-28">
       <div className="container mx-auto px-6">
-        <div className="relative overflow-hidden rounded-[2rem] bg-linear-to-br from-teal-800 via-teal-700 to-emerald-800 px-6 py-20 md:px-12 lg:px-20 lg:py-28">
+        <div className="relative overflow-hidden rounded-[2rem] bg-linear-to-br from-cyan-800 via-cyan-700 to-cyan-800 px-6 py-20 md:px-12 lg:px-20 lg:py-28">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_60%)]" />
-          {/* <div className="relative overflow-hidden rounded-[2rem] bg-teal-800 px-6 py-20 md:px-12 lg:px-20 lg:py-28"> */}
+          {/* <div className="relative overflow-hidden rounded-[2rem] bg-cyan-800 px-6 py-20 md:px-12 lg:px-20 lg:py-28"> */}
           {/* Decorative Blobs */}
           <div className="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-white/5 blur-2xl" />
-          <div className="absolute left-20 top-16 h-10 w-16 rounded-full bg-white/10" />
+          <div className="absolute left-20 top-16 h-16 w-16 rounded-full bg-white/10" />
           <div className="absolute -right-24 bottom-0 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
 
           {/* Content */}
@@ -28,7 +28,7 @@ export default function CTA() {
 
             <FadeUp delay={0.3}>
               <p
-                className="wow animate__animated animate__fadeInUp mx-auto mt-6 max-w-3xl text-lg leading-8 text-teal-100 md:text-xl"
+                className="wow animate__animated animate__fadeInUp mx-auto mt-6 max-w-3xl text-lg leading-8 text-cyan-100 md:text-xl"
                 data-wow-delay=".2s"
               >
                 Join hundreds of forward-thinking institutions who trust
