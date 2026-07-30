@@ -1,32 +1,34 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import Link from "next/link";
-import { Menu } from "lucide-react";
+import { useState } from "react"
+import Link from "next/link"
+import { Menu } from "lucide-react"
 
-import { Button } from "@workspace/ui/components/button";
+import { Button } from "@workspace/ui/components/button"
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
-} from "@workspace/ui/components/sheet";
+} from "@workspace/ui/components/sheet"
 
 const links = [
   { name: "Products", href: "#" },
   { name: "Solutions", href: "#" },
   { name: "Pricing", href: "#" },
   { name: "About", href: "#" },
-];
+]
 
 export default function MobileMenu() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger>
-        <Button variant="ghost" size="icon" aria-label="Open menu">
+        {/* <Button variant="ghost" size="icon" aria-label="Open menu"> */}
+        <div className="p-3">
           <Menu className="h-5 w-5" />
-        </Button>
+        </div>
+        {/* </Button> */}
       </SheetTrigger>
 
       <SheetContent side="right" className="w-[320px] px-5">
@@ -42,14 +44,11 @@ export default function MobileMenu() {
             </Link>
           ))}
 
-          <Button
-            className="mt-4 w-full"
-            onClick={() => setOpen(false)}
-          >
+          <Button className="mt-4 w-full" onClick={() => setOpen(false)}>
             Get Started
           </Button>
         </nav>
       </SheetContent>
     </Sheet>
-  );
+  )
 }
