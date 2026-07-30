@@ -14,6 +14,7 @@ export default function ThemeToggle() {
       onClick={() =>
         setTheme(theme === "dark" ? "light" : "dark")
       }
+      className="cursor-pointer"
     >
       {theme === "dark" ? (
         <Sun className="h-5 w-5" />
