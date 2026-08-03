@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <FadeLeft delay={0.3} className="mx-auto">
             <div className="wow animate__animated animate__fadeInLeft space-y-8">
-              <h1 className="text-5xl leading-tight font-bold md:text-6xl lg:text-7xl">
+              <h1 className="text-5xl leading-tight font-[600] lg:font-[800] md:text-6xl lg:text-7xl">
                 Empower your
                 <br />
                 institution with

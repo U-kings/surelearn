@@ -51,7 +51,8 @@ export default function PasswordInput<
       control={control}
       name={name}
       render={({ field, fieldState }) => (
-        <Field data-invalid={fieldState.invalid}>
+        <Field>
+          {/* <Field data-invalid={fieldState.invalid}> */}
           <FieldLabel>{label}</FieldLabel>
 
           <FieldContent>
@@ -71,7 +72,7 @@ export default function PasswordInput<
                   variant="ghost"
                   size="icon"
                   onClick={() => setShow(!show)}
-                  className="pointer-events-auto "
+                  className="pointer-events-auto"
                 >
                   {show ? (
                     <EyeOff className="h-4 w-4" />

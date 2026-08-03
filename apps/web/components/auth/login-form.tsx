@@ -204,7 +204,8 @@ export default function LoginForm() {
 
           {/* Request Access */}
           <Button variant="outline" className="h-11 w-full rounded-xl">
-            <Link href="/request-access">Request Access</Link>
+            <Link href="/signup">Request Access</Link>
+            {/* <Link href="/request-access">Request Access</Link> */}
           </Button>
 
           {/* Footer */}
