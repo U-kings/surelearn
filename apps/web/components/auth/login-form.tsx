@@ -150,14 +150,13 @@ export default function LoginForm() {
               </Field>
 
               <Field>
-                <FieldLabel htmlFor="password">Password</FieldLabel>
-                <FieldContent>
-                  <PasswordInput control={form.control} name="password" />
+                {/* <FieldContent> */}
+                <PasswordInput control={form.control} name="password" />
 
-                  <FieldError>
+                {/* <FieldError>
                     {form.formState.errors.password?.message}
-                  </FieldError>
-                </FieldContent>
+                  </FieldError> */}
+                {/* </FieldContent> */}
               </Field>
             </FieldGroup>
 
