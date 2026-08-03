@@ -45,7 +45,14 @@ export default function MobileMenu() {
           ))}
 
           <Button className="mt-4 w-full" onClick={() => setOpen(false)}>
-            Get Started
+            <Link href="/login" className="w-full text-center">
+              Login
+            </Link>
+          </Button>
+          <Button className="mt-4 w-full" onClick={() => setOpen(false)}>
+            <Link href="/signup" className="w-full text-center">
+              Get Started
+            </Link>
           </Button>
         </nav>
       </SheetContent>
