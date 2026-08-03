@@ -32,7 +32,7 @@ export default function Features() {
         </FadeUp>
 
         {/* Grid */}
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+        <div className="mt-16 grid gap-6 lg:grid-cols-3 overflow-hidden">
           {/* Large Card */}
           <FadeLeft
             delay={0.3}

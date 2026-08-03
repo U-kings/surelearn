@@ -73,7 +73,7 @@ export default function Hero() {
           </FadeLeft>
 
           <FadeRight delay={0.3} className="mx-auto">
-            <div className="wow animate__animated animate__fadeInRight">
+            <div className="">
               <DashboardMockup />
               {/* <Image
               src="/hero-dashboard.png"
