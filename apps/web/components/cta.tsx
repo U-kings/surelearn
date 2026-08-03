@@ -19,7 +19,7 @@ export default function CTA() {
           {/* Content */}
           <div className="relative mx-auto max-w-4xl text-center">
             <FadeUp delay={0.3}>
-              <h2 className="wow animate__animated animate__fadeInUp text-3xl font-semibold tracking-tight text-white md:text-5xl">
+              <h2 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
                 Ready to modernize your
                 <br className="hidden sm:block" />
                 educational infrastructure?
@@ -28,7 +28,7 @@ export default function CTA() {
 
             <FadeUp delay={0.3}>
               <p
-                className="wow animate__animated animate__fadeInUp mx-auto mt-6 max-w-3xl text-lg leading-8 text-cyan-100 md:text-xl"
+                className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-cyan-100 md:text-xl"
                 data-wow-delay=".2s"
               >
                 Join hundreds of forward-thinking institutions who trust
@@ -38,7 +38,7 @@ export default function CTA() {
 
             <FadeUp delay={0.3}>
               <div
-                className="wow animate__animated animate__fadeInUp mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
+                className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
                 data-wow-delay=".4s"
               >
                 <Button

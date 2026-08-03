@@ -19,7 +19,7 @@ export default function Features() {
       <div className="container mx-auto px-6">
         {/* Heading */}
         <FadeUp delay={0.3}>
-          <div className="wow animate__animated animate__fadeInUp mx-auto max-w-3xl text-center">
+          <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
               Precision-engineered for Educators
             </h2>
@@ -36,7 +36,7 @@ export default function Features() {
           {/* Large Card */}
           <FadeLeft
             delay={0.3}
-            className="wow animate__animated animate__fadeInLeft rounded-2xl border bg-background p-8 lg:col-span-2"
+            className="rounded-2xl border bg-background p-8 lg:col-span-2"
           >
             <div>
               <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
@@ -83,7 +83,7 @@ export default function Features() {
           {/* Card 2 */}
           <FadeRight
             delay={0.3}
-            className="wow animate__animated animate__fadeInRight rounded-2xl border bg-background p-8"
+            className="rounded-2xl border bg-background p-8"
           >
             <div>
               <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400">
@@ -102,7 +102,7 @@ export default function Features() {
           {/* Card 3 */}
           <FadeUp
             delay={0.3}
-            className="wow animate__animated animate__fadeInUp rounded-2xl border bg-background p-8"
+            className="rounded-2xl border bg-background p-8"
           >
             <div>
               <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400">
@@ -120,7 +120,7 @@ export default function Features() {
 
           <FadeUp
             delay={0.3}
-            className="wow animate__animated animate__fadeInUp rounded-2xl border bg-background p-8 lg:col-span-2"
+            className="rounded-2xl border bg-background p-8 lg:col-span-2"
           >
             <div className="grid gap-1 lg:grid-cols-2 lg:items-center">
               {/* Card 4 */}
@@ -144,7 +144,7 @@ export default function Features() {
 
               {/* Builder Preview */}
               {/* <FadeUp delay={0.3}>
-                <div className="rounded-2xl border bg-background p-8 wow animate__animated animate__fadeInUp"> */}
+                <div className="rounded-2xl border bg-background p-8 > */}
               <div className="space-y-3 rounded-xl border bg-muted/30 p-5">
                 <div className="rounded-md border bg-background p-4 font-medium">
                   ☷ Module 1: Introduction to Bio-Chemistry

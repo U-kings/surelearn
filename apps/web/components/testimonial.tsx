@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import { Star } from "lucide-react";
-import { FadeUp } from "./animations";
+import Image from "next/image"
+import { Star } from "lucide-react"
+import { FadeDown, FadeUp } from "./animations"
 
 export default function Testimonial() {
   return (
@@ -10,22 +10,21 @@ export default function Testimonial() {
       <div className="container mx-auto max-w-5xl px-6">
         <div className="flex flex-col items-center text-center">
           {/* Stars */}
-          <div
-            className="wow animate__animated animate__fadeInDown mb-8 flex items-center gap-1"
-            data-wow-duration="1s"
-          >
-            {Array.from({ length: 5 }).map((_, index) => (
-              <Star
-                key={index}
-                className="h-8 w-8 fill-cyan-400 text-cyan-400"
-              />
-            ))}
-          </div>
+          <FadeDown delay={0.3}>
+            <div className="mb-8 flex items-center gap-1">
+              {Array.from({ length: 5 }).map((_, index) => (
+                <Star
+                  key={index}
+                  className="h-8 w-8 fill-cyan-400 text-cyan-400"
+                />
+              ))}
+            </div>
+          </FadeDown>
 
           {/* Quote */}
           <FadeUp delay={0.3}>
             <blockquote
-              className="wow animate__animated animate__fadeInUp max-w-4xl text-xl leading-9 text-slate-100 md:text-2xl md:leading-10"
+              className="max-w-4xl text-xl leading-9 text-slate-100 md:text-2xl md:leading-10"
               data-wow-delay=".2s"
             >
               &quot;SureLearn has fundamentally transformed how our faculty
@@ -47,7 +46,7 @@ export default function Testimonial() {
                 alt="Dr. Aris Thorne"
                 width={84}
                 height={84}
-                className="rounded-full object-cover w-18 h-18"
+                className="h-18 w-18 rounded-full object-cover"
               />
             </div>
           </div>
@@ -55,7 +54,7 @@ export default function Testimonial() {
           {/* Name */}
           <FadeUp delay={0.3}>
             <h3
-              className="wow animate__animated animate__fadeInUp mt-6 text-2xl font-medium text-white"
+              className="mt-6 text-2xl font-medium text-white"
               data-wow-delay=".5s"
             >
               Dr. Aris Thorne
@@ -65,7 +64,7 @@ export default function Testimonial() {
           {/* Position */}
           <FadeUp delay={0.3}>
             <p
-              className="wow animate__animated animate__fadeInUp mt-2 text-sm font-medium uppercase tracking-[0.28em] text-cyan-400 md:text-lg"
+              className="mt-2 text-sm font-medium tracking-[0.28em] text-cyan-400 uppercase md:text-lg"
               data-wow-delay=".6s"
             >
               Dean of Innovation, Global University
@@ -74,5 +73,5 @@ export default function Testimonial() {
         </div>
       </div>
     </section>
-  );
+  )
 }

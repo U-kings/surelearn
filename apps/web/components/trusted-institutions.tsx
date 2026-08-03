@@ -31,7 +31,7 @@ export default function TrustedInstitutions() {
                 {/* <FadeUp key={school} delay={0.3}> */}
                 <div
                   key={school}
-                  className="wow animate__animated animate__fadeInUp"
+                  // className=""
                   data-wow-delay={`${index * 0.1}s`}
                 >
                   <span className="text-xl md:text-2xl font-extrabold tracking-tight text-slate-500 dark:text-slate-400 transition-colors hover:text-primary">
