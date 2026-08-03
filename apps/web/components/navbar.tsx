@@ -35,7 +35,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
-          {/* <MobileMenu /> */}
+          <MobileMenu />
         </div>
       </div>
     </header>

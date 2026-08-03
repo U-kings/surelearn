@@ -13,7 +13,7 @@ export default function Page() {
       <Navbar />
       <Hero />
       <TrustedInstitutions />
-      <Features />
+      {/* <Features /> */}
       <Testimonial />
       <CTA />
       <Footer />
