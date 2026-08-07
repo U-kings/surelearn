@@ -46,6 +46,7 @@ export default function Testimonial() {
                 alt="Dr. Aris Thorne"
                 width={84}
                 height={84}
+                loading="eager"
                 className="h-18 w-18 rounded-full object-cover"
               />
             </div>

@@ -49,37 +49,39 @@ export default function LoginForm() {
   })
 
   const onSubmit = (values: LoginFormValues) => {
-    startTransition(async () => {
-      const formData = new FormData()
+    router.push("/dashboard")
 
-      Object.entries(values).forEach(([key, value]) => {
-        formData.append(key, String(value))
-      })
+    // startTransition(async () => {
+    //   const formData = new FormData()
 
-      const result = await loginAction(values)
+    //   Object.entries(values).forEach(([key, value]) => {
+    //     formData.append(key, String(value))
+    //   })
 
-      if (!result.success) {
-        toast.add({ type: "error", description: result.message })
+    //   const result = await loginAction(values)
 
-        if (result.errors?.email) {
-          form.setError("email", {
-            message: result.errors.email[0],
-          })
-        }
+    //   if (!result.success) {
+    //     toast.add({ type: "error", description: result.message })
 
-        if (result.errors?.password) {
-          form.setError("password", {
-            message: result.errors.password[0],
-          })
-        }
+    //     if (result.errors?.email) {
+    //       form.setError("email", {
+    //         message: result.errors.email[0],
+    //       })
+    //     }
 
-        return
-      }
+    //     if (result.errors?.password) {
+    //       form.setError("password", {
+    //         message: result.errors.password[0],
+    //       })
+    //     }
 
-      toast.add({ type: "success", description: result.message })
+    //     return
+    //   }
 
-      router.replace("/dashboard")
-    })
+    //   toast.add({ type: "success", description: result.message })
+
+    //   router.replace("/dashboard")
+    // })
   }
   // try {
   //   setLoading(true)

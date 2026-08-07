@@ -21,7 +21,7 @@ export function Logo({ className, mode }: LogoProps) {
               width={170}
               height={24}
               loading="eager"
-              className="h-auto w-5/6 lg:w-auto"
+              className={cn("h-auto w-5/6 lg:w-auto", className)}
             />
           </>
         ) : mode === "dark" ? (
@@ -32,7 +32,7 @@ export function Logo({ className, mode }: LogoProps) {
               width={170}
               height={24}
               loading="eager"
-              className="h-auto w-5/6 lg:w-auto"
+              className={cn("h-auto w-5/6 lg:w-auto", className)}
             />
           </>
         ) : (
@@ -43,7 +43,10 @@ export function Logo({ className, mode }: LogoProps) {
               width={170}
               height={24}
               loading="eager"
-              className="block h-auto w-5/6 lg:w-auto dark:hidden"
+              className={cn(
+                "block h-auto w-5/6 lg:w-auto dark:hidden",
+                className
+              )}
             />
             <Image
               src="/surelearn-logo-light.png"
@@ -51,7 +54,10 @@ export function Logo({ className, mode }: LogoProps) {
               width={170}
               height={24}
               loading="eager"
-              className="hidden h-auto w-5/6 lg:w-auto dark:block"
+              className={cn(
+                "hidden h-auto w-5/6 lg:w-auto dark:block",
+                className
+              )}
             />
           </>
         )}

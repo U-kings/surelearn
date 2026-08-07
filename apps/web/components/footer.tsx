@@ -8,6 +8,7 @@ import {
 } from "lucide-react"
 import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6"
 import Image from "next/image"
+import { Logo } from "./logo"
 
 const footerLinks = {
   Product: ["Course Builder", "Analytics", "Integrations", "Enterprise"],
@@ -25,20 +26,7 @@ export default function Footer() {
           <div className="lg:col-span-4">
             {/* Logo */}
             <Link href="/" className="inline-flex items-center gap-3">
-              <Image
-                src="/surelearn-logo-dark.png"
-                alt="Surelearn Logo"
-                width={170}
-                height={24}
-                className="block h-auto w-5/6 lg:w-auto dark:hidden"
-              />
-              <Image
-                src="/surelearn-logo-light.png"
-                alt="Surelearn Logo"
-                width={170}
-                height={24}
-                className="hidden h-auto w-5/6 lg:w-auto dark:block"
-              />
+              <Logo/>
               {/* <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-cyan-700 text-white">
                 <GraduationCap className="h-5 w-5" />
               </div>
